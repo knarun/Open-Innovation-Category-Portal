@@ -1,0 +1,160 @@
+/* Container styling */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 20px;
+  background: none; /* No background color */
+}
+
+/* Popup form styling */
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000; /* Ensure popup is above other content */
+  padding: 20px;
+  width: 300px; /* Fixed width for the popup */
+}
+
+/* Hidden state for popup (use this class to hide it) */
+.popup.hidden {
+  opacity: 0;
+  transform: scale(0.9); /* Shrink slightly when closing */
+  visibility: hidden;
+}
+
+/* Heading */
+h1 {
+  font-size: 1.6rem;
+  color: #2c3e50;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+
+/* Input fields */
+input[type="text"],
+input[type="password"] {
+  width: 92%;
+  padding: 12px;
+  margin: 12px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border-color 0.2s ease-in-out;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  border-color: #2980b9; /* Subtle blue focus */
+  outline: none;
+}
+
+/* Button styling */
+.button {
+  width: 100%;
+  padding: 14px;
+  font-size: 1rem;
+  color: white;
+  background-color: #2980b9; /* Main button color */
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.button:hover {
+  background-color: #1a5984; /* Darker shade on hover */
+}
+
+/* Link styling */
+a {
+  color: #2980b9;
+  text-decoration: none;
+  font-size: 0.85rem;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Error message styling */
+.error {
+  color: red;
+  font-size: 0.9rem;
+  margin-top: 10px;
+}
+
+/* Spacing between different login sections */
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px; /* Space between User and Admin login */
+  margin-top: 20px;
+}
+
+/* Individual buttons for different login types */
+.user-login, .admin-login {
+  width: 48%; /* Equal width for user and admin login */
+  padding: 12px;
+  font-size: 1rem;
+  color: white;
+  background-color: #2980b9;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.user-login:hover, .admin-login:hover {
+  background-color: #1a5984;
+}
+
+/* Forget Password and Signup links */
+.forgot-password {
+  display: block;
+  margin-top: 15px;
+}
+
+.signup {
+  margin-top: 20px;
+  font-size: 0.9rem;
+}
+
+/* Close button styling */
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  color: #ff4f75;
+  cursor: pointer;
+}
+
+.close-button:hover {
+  color:red;
+}
+
+/* ... new styles ... */
+.signup-link {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.signup-link a {
+  color: #2980b9;
+  text-decoration: none;
+}
+
+.signup-link a:hover {
+  text-decoration: underline;
+}
